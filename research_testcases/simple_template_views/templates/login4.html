@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Some Title</title>
+</head>
+<body>
+Username :  {{ request.args['username'] | safe }} # CWEID 80
+Password : {{ request.args.get('password') | safe}} # CWEID 80
+
+Username from session : {{ session['username'] | safe }} # CWEID 80
+</body>
+</html>
